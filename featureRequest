@@ -1,0 +1,20 @@
+<!doctype html>
+<link rel="stylesheet" href="styleFeatureRequest.css">
+<link rel ="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVZcrlqlFHGiHMllD965_4ksx7rPTNa6u
+    j5Q&s"/>
+<h1 class = "featureHeader">
+    Feature Requests
+     <img class ="SJimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVZcrlqlFHGiHMllD965_4ksx7rPTNa6u
+    j5Q&s"
+    width="100"
+    height="100"
+    >
+</h1>
+<p class ="headerInfo">
+If you’d like to request a new feature for the South Jersey Underground Smash Ultimate website, please 
+submit it in the SJU Discord channel titled Feature Requests. All ideas are welcome, but please note that not 
+all requested features may be selected. Using the channel helps us stay organized and 
+improve the site for the whole community.
+</p>
+ <footer class = "credits">
+    <p>Credit to <strong>TJ13</strong> for background images.</p>

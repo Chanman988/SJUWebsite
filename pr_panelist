@@ -1,0 +1,13 @@
+<!doctype html>
+<link rel="stylesheet" href="style_panelist">
+
+<h1>South Jersey Panelists:</h1>
+<p class ="Panelists">Noodl
+    <br><img src="https://ssb.wiki.gallery/images/thumb/c/c9/Donkey_Kong_SSBU.png/250px-Donkey_Kong_SSBU.png"
+        id="Noodl"
+        width="300"
+        height="300">
+</p>
+
+<p2 class ="Panelists">Testing
+</p2>
