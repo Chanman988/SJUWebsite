@@ -1,7 +1,14 @@
 <!doctype html>
-<link rel="stylesheet" href="style_panelist">
-
-<h1>South Jersey Panelists:</h1>
+<link rel="stylesheet" a href="style_panelist">
+<link rel ="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVZcrlqlFHGiHMllD965_4ksx7rPTNa6u
+    j5Q&s"/>
+<h1>South Jersey Panelists:
+    <img class ="SJimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVZcrlqlFHGiHMllD965_4ksx7rPTNa6u
+    j5Q&s"
+    width="100"
+    height="100"
+    >
+</h1>
 <p class ="Panelists">Noodl
     <br><img src="https://ssb.wiki.gallery/images/thumb/c/c9/Donkey_Kong_SSBU.png/250px-Donkey_Kong_SSBU.png"
         id="Noodl"
@@ -9,5 +16,48 @@
         height="300">
 </p>
 
-<p2 class ="Panelists">Testing
+<p2 class ="Panelists">Austi
+    <br><img 
+    src="https://imgs.search.brave.com/RUjyHoiLWx7KnvjmxkLFF4mHDTrTQnIE-yXR-s044yU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zcmsu/c2hpYi5saXZlL2lt/YWdlcy90aHVtYi81/LzUwL1NTQlVfUk9C/X1BPUlRSQUlULnBu/Zy8zMjBweC1TU0JV/X1JPQl9QT1JUUkFJ/VC5wbmc"
+        id="Austi"
+        width="300"
+        height="300">
 </p2>
+<p2 class ="Panelists">Mr.M
+    <br><img 
+    src ="https://ssb.wiki.gallery/images/thumb/9/93/Pikachu_SSBU.png/250px-Pikachu_SSBU.png"
+        id="Mr.M"
+        width="300"
+        height="300">
+</p2>
+<p2 class ="Panelists">LittleMacMain
+    <br><img 
+    src="https://ssb.wiki.gallery/images/thumb/3/35/Min_Min_SSBU.png/1200px-Min_Min_SSBU.png"
+        id="Mac"
+        width="300"
+        height="300">
+</p2>
+<p2 class ="Panelists">Pop
+    <br><img 
+    src="https://ssb.wiki.gallery/images/thumb/2/2f/Fox_SSBU.png/250px-Fox_SSBU.png"
+        id="Austi"
+        width="300"
+        height="300">
+</p2>
+<p2 class ="Panelists">Sickler
+    <br><img 
+    src="https://images.squarespace-cdn.com/content/v1/5c82f54e7980b375f3b91cb0/1553901129012-T55KH96EETHU9A20N4CO/Greninja+%283%29.png"
+        id="Sick"
+        width="300"
+        height="300">
+</p2>
+<p2 class ="Panelists">Xavier
+    <br><img 
+    src="https://ssb.wiki.gallery/images/thumb/3/36/Mario-Alt7_SSBU.png/250px-Mario-Alt7_SSBU.png"
+        id="Sick"
+        width="300"
+        height="300">
+</p2>
+
+<footer class = "credits">
+    <p>Credit to <strong>TJ13</strong> for background images.</p>
