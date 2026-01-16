@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(0, 0, 0, 0);
+  background-color:rgba(0, 0, 0, 0);
   font-family: Arial, sans-serif;
   text-align: center;
   background-size: cover;
@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-  color: rgb(0, 0, 0) !important;
+  color:rgb(0, 0, 0) !important;
   /*text-shadow: 2px 1px 10px rgb(123, 122, 124); */
   font-size:3.7em;
  /* background-color: rgba(0, 0, 0, 0);  This has no value atm.*/
@@ -204,4 +204,5 @@ color: rgb(21, 255, 0);
 
 
 }
+
 
