@@ -9,7 +9,7 @@ body {
 .Video {
 filter:grayscale(1);
 width: 100%;
-height: 25%;
+height: 35%;
 border-radius: 15px;
 object-fit:cover;
 border:0.2rem outset rgb(0, 0, 0);
@@ -210,6 +210,7 @@ color: rgb(21, 255, 0);
 
 
 }
+
 
 
 
