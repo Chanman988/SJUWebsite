@@ -19,7 +19,7 @@ body {
 }
 .Video {
   width: 100vw;
-  height: 50vh;
+  height: 50dvh;
   overflow: hidden;
   position: relative;
   filter: grayscale(1);
@@ -58,7 +58,13 @@ padding: 5.0px;
   border-radius:50px;
 
 }
-
+.Summit{
+  border-radius: 60px;
+  position: relative;
+  width: 600px;
+  height: 500px;
+  
+}
 .PR {
 color: #000000;
 padding: 5.5px;
@@ -97,6 +103,12 @@ color: rgb(248, 0, 136);
   
 } 
 
+.p {
+  font-family:"Helvetica Neue";
+  font-size: 75px;
+
+}
+
 .p7 {
 
 color: rgb(175, 31, 156);
@@ -127,7 +139,7 @@ iframe{
 
 .p1{
 
-    color: rgb(95, 95, 216);
+    color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.171);
     font-family: Georgia, 'Times New Roman', Times, serif;
     
@@ -217,24 +229,20 @@ color: rgb(21, 255, 0);
 }
 
 .credits {
-  margin-top: 700px;
+  margin-top: 200px;
   padding: 30px;
   border-top: 0.3px solid black;
   text-align: center;
-
+  
 }
 .NewsBoard {
 
   display: flex;
 
- 
-
-}
-.TwitterSJU {
-
 
 
 }
+
 
 
 
