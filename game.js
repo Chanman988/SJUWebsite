@@ -67,7 +67,7 @@ function makeGrid(rows, cols) {
 }
 
 
-makeGrid(5,10);
+makeGrid(10,5);
 
 let squareCounter = 0;
 
