@@ -17,13 +17,24 @@ body {
   background-image: url("Background.png");
 
 }
+/* This is your container (the 'window') */
 .Video {
   width: 100vw;
-  height: 50dvh;
+  height: 55dvh;
   overflow: hidden;
   position: relative;
   filter: grayscale(1);
-  object-fit: cover;
+}
+
+/* This targets the actual video inside the 'window' */
+.Video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Forces the video to fill the 40dvh box */
+  
+  /* POSITIONING: */
+  /* '50%' is left/right. '0%' pulls the video DOWN to show the very top. */
+  object-position: 50% 45%; 
 }
 
 
