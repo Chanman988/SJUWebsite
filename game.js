@@ -85,7 +85,7 @@ function buttonPush() {
             players.splice(index,1);      
         }
     } else if (val === "HEROBRINE") {
-        alert("⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛\n⬛🏽🏽🏽🏽🏽🏽⬛\n🏽🏽🏽🏽🏽🏽🏽🏽\n🏽⬜⬜🏽🏽⬜⬜🏽\n🏽🏽🏽🟫🟫🏽🏽🏽\n🏽🏽⬛🏽🏽⬛🏽🏽\n🏽🏽⬛⬛⬛⬛🏽🏽");
+        alert("Herobrine");
     } else {
         alert("Not a Player or was already guessed.");
     }
