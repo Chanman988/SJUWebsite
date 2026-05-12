@@ -70,7 +70,7 @@ h2 {
   background-color: rgba(219, 211, 211, 0.589);
   border: 2px solid #000000;
   /* This ensures the cells stay square regardless of width */
-  aspect-ratio: 4/3;
+  aspect-ratio: 6/3;
   
 }
 .grid-item.correct {
