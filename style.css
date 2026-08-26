@@ -1,22 +1,20 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 div {
-
   width: 100vw;
   margin: 0;
   padding: 0;
-
 }
 body {
-  background-color:rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
   font-family: Arial, sans-serif;
   text-align: center;
   background-size: cover;
   background-image: url("Background.png");
-
 }
 /* This is your container (the 'window') */
 .Video {
@@ -33,204 +31,204 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Forces the video to fill the 40dvh box */
-  
+
   /* POSITIONING: */
   /* '50%' is left/right. '0%' pulls the video DOWN to show the very top. */
-  object-position: 50% 45%; 
+  object-position: 50% 45%;
 }
-
-
-
 
 h1 {
-  color:rgb(0, 0, 0) !important;
+  color: rgb(0, 0, 0) !important;
   /*text-shadow: 2px 1px 10px rgb(123, 122, 124); */
-  font-size:3.7em;
- /* background-color: rgba(0, 0, 0, 0);  This has no value atm.*/
+  font-size: 3.7em;
+  /* background-color: rgba(0, 0, 0, 0);  This has no value atm.*/
   border-bottom: 2.5px solid black;
-  margin:0;
-} 
-
+  margin: 0;
+}
 
 nav {
-
-border-bottom: 2.5px solid black;
-padding: 5.0px;
-
+  border-bottom: 2.5px solid black;
+  padding: 5px;
 }
 
-.SJimage{
-  border-radius:50px;
-
+.player-grid summary {
+  display: inline-block;
+  min-width: 260px;
+  padding: 10px 24px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  background: rgba(255, 248, 248, 0.881);
+  box-shadow:
+    8px 8px 0 rgb(0, 0, 0),
+    inset 0 -5px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 55px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  list-style: none;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.6s ease,
+    filter 0.2s ease;
 }
-.Summit{
+
+.player-grid summary::-webkit-details-marker {
+  display: none;
+}
+
+.player-grid summary:hover {
+  transform: translate(0px, -5px) scale(1.15);
+  box-shadow:
+    2px 5px 0 rgb(0, 0, 0),
+    inset 0 -5px 0 rgba(0, 0, 0, 0.2);
+  filter: saturate(3.5) brightness(1);
+}
+
+.player-grid details.is-animating > :not(summary) {
+  animation: player-reveal 0.45s ease both;
+}
+
+@keyframes player-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.SJimage {
+  border-radius: 50px;
+}
+.Summit {
   border-radius: 60px;
   position: relative;
   width: 600px;
   height: 500px;
-  
 }
 .PR {
-color: #000000;
-padding: 5.5px;
-transition:background-color 0.4s;
-font-family: 'Times New Roman', Times, serif;
-font-size: 35px;
-margin: 0px 20.0px;
-border-radius: 10px;
-text-shadow: 3px 3px 5px;
-
-
+  color: #000000;
+  padding: 5.5px;
+  transition: background-color 0.4s;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+  margin: 0px 20px;
+  border-radius: 10px;
+  text-shadow: 3px 3px 5px;
 }
-.PR:hover{
-
-background-color: #bebebebe;
-
-
+.PR:hover {
+  background-color: #bebebebe;
 }
 
 #sauce {
-
- width:200px;
-  height:200px;
-  border:0.2rem outset rgb(0, 0, 0);
+  width: 200px;
+  height: 200px;
+  border: 0.2rem outset rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.726);
-
 }
 
-.p4{
-color: rgb(248, 0, 136);
-    background-color: rgba(0, 0, 0, 0.171);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
-
-
-  
-} 
+.p4 {
+  color: rgb(248, 0, 136);
+  background-color: rgba(0, 0, 0, 0.171);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 
 .p {
-  font-family:"Helvetica Neue";
+  font-family: "Helvetica Neue";
   font-size: 75px;
-
 }
 
 .p7 {
-
-color: rgb(175, 31, 156);
-    bacrgb(248, 132, 0)gba(0, 0, 0, 0.171);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-background-color: rgba(0, 0, 0, 0.342);
-
+  color: rgb(175, 31, 156);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgba(0, 0, 0, 0.342);
 }
-.p5{
-color: rgb(255, 238, 0);
-    bacrgb(248, 132, 0)gba(0, 0, 0, 0.171);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-background-color: rgba(0, 0, 0, 0.342);
+.p5 {
+  color: rgb(255, 238, 0);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgba(0, 0, 0, 0.342);
+}
 
-
-} 
-
- /*li {
+/*li {
     padding: 5px;
     background-color: rgb(180, 180, 174);
     filter:brightness(1.2);
     border: 0.4rem outset rgb(0, 0, 0);
 }
 */
-iframe{
-    border: 0.3rem outset rgb(117, 116, 116);
+iframe {
+  border: 0.3rem outset rgb(117, 116, 116);
 }
 
-.p1{
-
-    color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.171);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+.p1 {
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.171);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-.p2{
-
-    color: rgb(202, 21, 21);
-    background-color: rgba(0, 0, 0, 0.171);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.p2 {
+  color: rgb(202, 21, 21);
+  background-color: rgba(0, 0, 0, 0.171);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-.p3{
-
-color: rgb(37, 112, 14);
-    background-color: rgba(0, 0, 0, 0.171);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-
+.p3 {
+  color: rgb(37, 112, 14);
+  background-color: rgba(0, 0, 0, 0.171);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-.p6{
 
-color: rgb(255, 0, 0);
-    background-color: rgba(0, 0, 0, 0.171);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-
+.p6 {
+  color: rgb(255, 0, 0);
+  background-color: rgba(0, 0, 0, 0.171);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .p8 {
-
-color: rgb(0, 225, 255);
-    background-color: rgba(0, 0, 0, 0.534);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-
+  color: rgb(0, 225, 255);
+  background-color: rgba(0, 0, 0, 0.534);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-#A9{ 
+#A9 {
   /*For A9's Photo within the tab hash tags are used to adjust Id's */
-  width:150px;
-  height:150px;
-  border:0.2rem outset rgb(0, 0, 0);
+  width: 175px;
+  height: 175px;
+  border: 0.2rem outset rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.726);
 }
-#X{ 
+#X {
   /*For X's Photo within the tab hash tags are used to adjust Id's */
-  width:150px;
-  height:150px;
-  border:0.2rem outset rgb(0, 0, 0);
+  width: 175px;
+  height: 175px;
+  border: 0.2rem outset rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.726);
 }
 
-.top{
-
-text-align: center;
-    
+.top {
+  text-align: center;
 }
-.p9{
-
-color: rgba(69, 11, 206, 0.801);
-    background-color: rgba(0, 0, 0, 0.336);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-
+.p9 {
+  color: rgba(69, 11, 206, 0.801);
+  background-color: rgba(0, 0, 0, 0.336);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-.p10{
-
-color: rgb(21, 255, 0);
-    background-color: rgba(0, 0, 0, 0.534);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-
+.p10 {
+  color: rgb(21, 255, 0);
+  background-color: rgba(0, 0, 0, 0.534);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-#Hoo{
-  width:150px;
-  height:150px;
-  border:0.2rem outset rgb(0, 0, 0);
+#Hoo {
+  width: 175px;
+  height: 175px;
+  border: 0.2rem outset rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.726);
-
-
 }
-.Tbutton{
-
-  background-color:darkgreen;
+.Tbutton {
+  background-color: darkgreen;
   border-radius: 0px;
   box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 0.2),
     inset -2px -2px 3px rgb(0 0 0 / 0.2);
-
 }
 
 .credits {
@@ -238,30 +236,12 @@ color: rgb(21, 255, 0);
   padding: 30px;
   border-top: 0.3px solid black;
   text-align: center;
-  
 }
 .NewsBoard {
-
   display: flex;
-
-
-
 }
 
 .SJsummit {
-
-width: 100%;
-height: auto;
-
-
-
+  width: 100%;
+  height: auto;
 }
-
-
-
-
-
-
-
-
-
