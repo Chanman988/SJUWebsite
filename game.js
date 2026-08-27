@@ -83,8 +83,12 @@ function buttonPush() {
     }
   } else if (val === "HEROBRINE") {
     alert("Herobrine");
+  } else if (val === "EASTER EGG") {
+    window.location.href =
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=1";
   } else {
-    alert("Not a Player or was already guessed.");
+    alert("Player Already guessed or is not a player.")
+
   }
 }
 
