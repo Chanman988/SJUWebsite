@@ -47,8 +47,42 @@ h1 {
 }
 
 nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
   border-bottom: 2.5px solid black;
-  padding: 5px;
+  padding: 12px;
+}
+
+.pr-intro {
+  margin: 28px auto 20px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.pr-intro h2,
+.pr-intro p {
+  margin: 6px 0;
+}
+
+.pr-intro h2 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  text-transform: uppercase;
+}
+
+.pr-kicker {
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.pr-intro p:last-child {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.05rem;
 }
 
 .player-grid summary {
@@ -71,6 +105,38 @@ nav {
     transform 0.4s ease,
     box-shadow 0.6s ease,
     filter 0.2s ease;
+}
+
+.player-grid details {
+  margin-bottom: 6px;
+}
+
+.player-grid details > img {
+  display: block;
+  margin: 12px auto 0;
+}
+
+.pr-rank {
+  display: inline-block;
+  margin-right: 12px;
+  padding-right: 12px;
+  border-right: 3px solid currentColor;
+  font-size: 0.45em;
+  font-weight: 900;
+  letter-spacing: 1px;
+  vertical-align: middle;
+}
+
+.podium-first summary {
+  border-color: rgb(212, 175, 55);
+}
+
+.podium-second summary {
+  border-color: rgb(150, 150, 150);
+}
+
+.podium-third summary {
+  border-color: rgb(176, 112, 64);
 }
 
 .player-grid summary::-webkit-details-marker {
@@ -111,11 +177,11 @@ nav {
 }
 .PR {
   color: #000000;
-  padding: 5.5px;
+  padding: 8px 12px;
   transition: background-color 0.4s;
   font-family: "Times New Roman", Times, serif;
-  font-size: 35px;
-  margin: 0px 20px;
+  font-size: 28px;
+  margin: 0;
   border-radius: 10px;
   text-shadow: 3px 3px 5px;
 }
