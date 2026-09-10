@@ -1,88 +1,92 @@
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 div {
+
   width: 100vw;
   margin: 0;
   padding: 0;
+
 }
 body {
-  background-color: rgba(0, 0, 0, 0);
+  background-color:rgba(0, 0, 0, 0);
   font-family: Arial, sans-serif;
   text-align: center;
   background-size: cover;
   background-image: url("Background.png");
+
 }
 /* This is your container (the 'window') */
-.Video {
-  width: 100%;
-  max-width: 100%;
-  height: 55dvh;
-  overflow: hidden;
-  position: relative;
-  filter: grayscale(1);
-}
-
-/* This targets the actual video inside the 'window' */
-.Video video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Forces the video to fill the 40dvh box */
-
-  /* POSITIONING: */
-  /* '50%' is left/right. '0%' pulls the video DOWN to show the very top. */
-  object-position: 50% 45%;
-}
-
-h1 {
-  color: rgb(0, 0, 0) !important;
-  /*text-shadow: 2px 1px 10px rgb(123, 122, 124); */
-  font-size: 3.7em;
-  /* background-color: rgba(0, 0, 0, 0);  This has no value atm.*/
-  border-bottom: 2.5px solid black;
+.site-splash {
+  position: fixed;
+  inset: 0;
+  width: auto;
+  height: auto;
   margin: 0;
-}
-
-nav {
+  padding: 0;
+  z-index: 1000;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  gap: 10px;
-  border-bottom: 2.5px solid black;
-  padding: 12px;
+  align-items: center;
+  background: #000;
+  pointer-events: none;
+  animation: splash-fade 2.5s ease forwards;
 }
 
-.pr-intro {
-  margin: 28px auto 20px;
-  color: rgb(0, 0, 0);
+.site-splash img {
+  width: min(42vw, 280px);
+  height: auto;
+  border-radius: 50px;
+  animation: logo-intro 2.5s ease forwards;
+}
+
+.splash-text {
+  width: auto;
+  color: white;
   text-align: center;
-}
-
-.pr-intro h2,
-.pr-intro p {
-  margin: 6px 0;
-}
-
-.pr-intro h2 {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  text-transform: uppercase;
+  animation: logo-intro 2.5s ease forwards;
 }
 
-.pr-kicker {
-  font-family: Arial, sans-serif;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+.splash-text p {
+  margin: 4px 0;
 }
 
-.pr-intro p:last-child {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.05rem;
+@keyframes logo-intro {
+  0% {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+
+  18% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  68% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes splash-fade {
+  0%,
+  68% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .player-grid summary {
@@ -160,141 +164,255 @@ nav {
     opacity: 0;
     transform: translateY(-12px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.SJimage {
-  border-radius: 50px;
+.Video {
+  width: 100%;
+  max-width: 100%;
+  height: 55dvh;
+  overflow: hidden;
+  position: relative;
+  filter: grayscale(1);
 }
-.Summit {
+
+/* This targets the actual video inside the 'window' */
+.Video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Forces the video to fill the 40dvh box */
+  
+  /* POSITIONING: */
+  /* '50%' is left/right. '0%' pulls the video DOWN to show the very top. */
+  object-position: 50% 45%; 
+}
+
+
+
+
+h1 {
+  color:rgb(0, 0, 0) !important;
+  /*text-shadow: 2px 1px 10px rgb(123, 122, 124); */
+  font-size:3.7em;
+ /* background-color: rgba(0, 0, 0, 0);  This has no value atm.*/
+  border-bottom: 2.5px solid black;
+  margin:0;
+} 
+
+
+nav {
+
+border-bottom: 2.5px solid black;
+padding: 5.0px;
+
+}
+
+.pr-intro {
+  margin: 28px auto 20px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.pr-intro h2,
+.pr-intro p {
+  margin: 6px 0;
+}
+
+.pr-intro h2 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  text-transform: uppercase;
+}
+
+.pr-kicker {
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.pr-intro p:last-child {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.05rem;
+}
+
+.SJimage{
+  border-radius:50px;
+
+}
+.Summit{
   border-radius: 60px;
   position: relative;
   width: 600px;
   height: 500px;
+  
 }
 .PR {
-  color: #000000;
-  padding: 8px 12px;
-  transition: background-color 0.4s;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 28px;
-  margin: 0;
-  border-radius: 10px;
-  text-shadow: 3px 3px 5px;
+color: #000000;
+padding: 5.5px;
+transition:background-color 0.4s;
+font-family: 'Times New Roman', Times, serif;
+font-size: 35px;
+margin: 0px 20.0px;
+border-radius: 10px;
+text-shadow: 3px 3px 5px;
+
+
 }
-.PR:hover {
-  background-color: #bebebebe;
+.PR:hover{
+
+background-color: #bebebebe;
+
+
 }
 
 #sauce {
-  width: 200px;
-  height: 200px;
-  border: 0.2rem outset rgb(0, 0, 0);
+
+ width:200px;
+  height:200px;
+  border:0.2rem outset rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.726);
+
 }
 
-.p4 {
-  color: rgb(248, 0, 136);
-  background-color: rgba(0, 0, 0, 0.171);
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
+.p4{
+color: rgb(248, 0, 136);
+    background-color: rgba(0, 0, 0, 0.171);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+
+
+  
+} 
 
 .p {
-  font-family: "Helvetica Neue";
+  font-family:"Helvetica Neue";
   font-size: 75px;
+
 }
 
 .p7 {
-  color: rgb(175, 31, 156);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: rgba(0, 0, 0, 0.342);
-}
-.p5 {
-  color: rgb(255, 238, 0);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: rgba(0, 0, 0, 0.342);
-}
 
-/*li {
+color: rgb(175, 31, 156);
+    bacrgb(248, 132, 0)gba(0, 0, 0, 0.171);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: rgba(0, 0, 0, 0.342);
+
+}
+.p5{
+color: rgb(255, 238, 0);
+    bacrgb(248, 132, 0)gba(0, 0, 0, 0.171);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: rgba(0, 0, 0, 0.342);
+
+
+} 
+
+ /*li {
     padding: 5px;
     background-color: rgb(180, 180, 174);
     filter:brightness(1.2);
     border: 0.4rem outset rgb(0, 0, 0);
 }
 */
-iframe {
-  border: 0.3rem outset rgb(117, 116, 116);
+iframe{
+    border: 0.3rem outset rgb(117, 116, 116);
 }
 
-.p1 {
-  color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.171);
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-.p2 {
-  color: rgb(202, 21, 21);
-  background-color: rgba(0, 0, 0, 0.171);
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-.p3 {
-  color: rgb(37, 112, 14);
-  background-color: rgba(0, 0, 0, 0.171);
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
+.p1{
 
-.p6 {
-  color: rgb(255, 0, 0);
-  background-color: rgba(0, 0, 0, 0.171);
-  font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.171);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.p2{
+
+    color: rgb(202, 21, 21);
+    background-color: rgba(0, 0, 0, 0.171);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.p3{
+
+color: rgb(37, 112, 14);
+    background-color: rgba(0, 0, 0, 0.171);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+.p6{
+
+color: rgb(255, 0, 0);
+    background-color: rgba(0, 0, 0, 0.171);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
 }
 .p8 {
-  color: rgb(0, 225, 255);
-  background-color: rgba(0, 0, 0, 0.534);
-  font-family: Georgia, "Times New Roman", Times, serif;
+
+color: rgb(0, 225, 255);
+    background-color: rgba(0, 0, 0, 0.534);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
 }
-#A9 {
+#A9{ 
   /*For A9's Photo within the tab hash tags are used to adjust Id's */
-  width: 175px;
-  height: 175px;
-  border: 0.2rem outset rgb(0, 0, 0);
+  width:150px;
+  height:150px;
+  border:0.2rem outset rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.726);
 }
-#X {
+#X{ 
   /*For X's Photo within the tab hash tags are used to adjust Id's */
-  width: 175px;
-  height: 175px;
-  border: 0.2rem outset rgb(0, 0, 0);
+  width:150px;
+  height:150px;
+  border:0.2rem outset rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.726);
 }
 
-.top {
-  text-align: center;
+.top{
+
+text-align: center;
+    
 }
-.p9 {
-  color: rgba(69, 11, 206, 0.801);
-  background-color: rgba(0, 0, 0, 0.336);
-  font-family: Georgia, "Times New Roman", Times, serif;
+.p9{
+
+color: rgba(69, 11, 206, 0.801);
+    background-color: rgba(0, 0, 0, 0.336);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
 }
-.p10 {
-  color: rgb(21, 255, 0);
-  background-color: rgba(0, 0, 0, 0.534);
-  font-family: Georgia, "Times New Roman", Times, serif;
+.p10{
+
+color: rgb(21, 255, 0);
+    background-color: rgba(0, 0, 0, 0.534);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
 }
-#Hoo {
-  width: 175px;
-  height: 175px;
-  border: 0.2rem outset rgb(0, 0, 0);
+#Hoo{
+  width:150px;
+  height:150px;
+  border:0.2rem outset rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.726);
+
+
 }
-.Tbutton {
-  background-color: darkgreen;
+.Tbutton{
+
+  background-color:darkgreen;
   border-radius: 0px;
   box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 0.2),
     inset -2px -2px 3px rgb(0 0 0 / 0.2);
+
 }
 
 .credits {
@@ -302,12 +420,30 @@ iframe {
   padding: 30px;
   border-top: 0.3px solid black;
   text-align: center;
+  
 }
 .NewsBoard {
+
   display: flex;
+
+
+
 }
 
 .SJsummit {
-  width: 100%;
-  height: auto;
+
+width: 100%;
+height: auto;
+
+
+
 }
+
+
+
+
+
+
+
+
+
