@@ -19,7 +19,7 @@ const players = [
   "GREY",
   "HAM BURRITO",
   "SICKLE",
-  "VAMPITE",
+  "VAMPIRE",
   "APSARA",
   "MEGNA",
   "TJ13",
