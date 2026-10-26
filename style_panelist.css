@@ -1,13 +1,57 @@
 h1 {
   text-align: center;
-  border-bottom: 2.5px solid rgba(177, 190, 212, 0.8);
+  border-bottom: 2.5px solid #000;
   margin: 18px auto 30px;
-  font-size: 48px;
-  color: #edf3ff;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-weight: 800;
+  font-family: Arial, sans-serif;
+  font-size: 3.7em;
+  color: #000;
+  font-weight: bold;
   max-width: 1100px;
+}
+
+.site-header {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr) 84px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.site-header > a {
+  grid-column: 1;
+  justify-self: start;
+  display: block;
+  line-height: 0;
+}
+
+.site-header > .SJimage {
+  grid-column: 1;
+  justify-self: start;
+  display: block;
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.site-header-title {
+  grid-column: 2;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    grid-template-columns: 56px minmax(0, 1fr) 56px;
+    font-size: clamp(1.4rem, 5.5vw, 2rem);
+  }
+
+  .site-header-title {
+    font-size: clamp(1.4rem, 5.5vw, 2rem);
+  }
+
+  .site-header .SJimage {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .Panelists {
@@ -55,10 +99,9 @@ h1 {
 
 body {
   background-size: cover;
-  background-color: #070b12;
-  background-image: linear-gradient(rgba(8, 12, 20, 0.88), rgba(8, 12, 20, 0.88)),
-    url("Background.png");
-  color: #edf3ff;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("Background.png");
+  color: #000;
   font-family: Arial, Helvetica, sans-serif;
 }
 

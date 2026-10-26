@@ -208,6 +208,48 @@ h1 {
   margin:0;
 } 
 
+.site-header {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr) 84px;
+  align-items: center;
+}
+
+.site-header > .SJimage,
+.site-header > a {
+  grid-column: 1;
+  justify-self: start;
+}
+
+.site-header > a {
+  display: block;
+  line-height: 0;
+}
+
+.site-header .SJimage {
+  display: block;
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.site-header-title {
+  grid-column: 2;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    grid-template-columns: 56px minmax(0, 1fr) 56px;
+    font-size: clamp(1.4rem, 5.5vw, 2rem);
+  }
+
+  .site-header .SJimage {
+    width: 48px;
+    height: 48px;
+  }
+}
+
 
 nav {
 
@@ -469,5 +511,3 @@ height: auto;
 
 
 }
-
-
