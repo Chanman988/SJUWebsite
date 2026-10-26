@@ -1,33 +1,65 @@
 h1 {
   text-align: center;
-  border-bottom: 2.5px solid black;
-  margin: 10.5px;
-  font-size: 50px;
+  border-bottom: 2.5px solid rgba(177, 190, 212, 0.8);
+  margin: 18px auto 30px;
+  font-size: 48px;
+  color: #edf3ff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 800;
+  max-width: 1100px;
 }
 
 .Panelists {
-  color: rgb(255, 255, 255);
-  margin: 50px 50px;
+  color: #edf3ff;
+  margin: 34px 20px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 50px;
+  font-size: 28px;
   display: inline-block;
-  /* Wraps around images and text*/
-  border: 4px solid;
-  border-color: rgba(255, 255, 255, 0.808);
-  text-decoration-line: underline;
+  border: 1px solid rgba(195, 208, 228, 0.6);
   text-align: center;
-  background: rgb(0, 0, 0);
-  border-radius: 25px;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0, 0, 0),
-    rgba(255, 254, 254, 0.849)
-  );
+  background: linear-gradient(180deg, rgba(18, 24, 36, 0.96), rgba(9, 14, 22, 0.96));
+  border-radius: 16px;
+  padding: 18px 22px 16px;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  min-width: 280px;
+  vertical-align: top;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Panelists:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.45), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.Panelists.noodl { border-color: rgba(214, 90, 90, 0.9); box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(214, 90, 90, 0.2); }
+.Panelists.austi { border-color: rgba(90, 136, 255, 0.9); box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(90, 136, 255, 0.2); }
+.Panelists.mrm { border-color: rgba(241, 191, 60, 0.9); box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(241, 191, 60, 0.2); }
+.Panelists.macmain { border-color: rgba(75, 200, 170, 0.9); box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(75, 200, 170, 0.2); }
+.Panelists.pop { border-color: rgba(121, 171, 255, 0.9); box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(121, 171, 255, 0.2); }
+.Panelists.sickler { border-color: rgba(164, 110, 255, 0.9); box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(164, 110, 255, 0.2); }
+.Panelists.xavier { border-color: rgba(225, 147, 72, 0.9); box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(225, 147, 72, 0.2); }
+
+.Panelists img {
+  display: block;
+  width: 260px;
+  height: 260px;
+  object-fit: contain;
+  margin: 12px auto 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 body {
   background-size: cover;
-  background-image: url("Background.png");
+  background-color: #070b12;
+  background-image: linear-gradient(rgba(8, 12, 20, 0.88), rgba(8, 12, 20, 0.88)),
+    url("Background.png");
+  color: #edf3ff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .SJimage {
@@ -35,10 +67,13 @@ body {
 }
 
 .credits {
-  margin-top: 200px;
-  padding: 30px;
-  border-top: 0.3px solid black;
+  margin-top: 160px;
+  padding: 28px 20px;
+  border-top: 1px solid rgba(185, 194, 209, 0.5);
   text-align: center;
+  color: #dfe7f5;
+  letter-spacing: 0.04em;
+  font-size: 16px;
 }
 
 .textInput {

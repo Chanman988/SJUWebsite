@@ -6,7 +6,7 @@ const players = [
   "A9",
   "SPIRO",
   "NOODL",
-  "HOODINII",
+  "HOO D. NII",
   "VINCE",
   "XAVIER",
   "ARYEH",
@@ -19,8 +19,8 @@ const players = [
   "GREY",
   "HAM BURRITO",
   "SICKLE",
-  "VAMPITE",
-  "APSARA",
+  "VAMPIRE",
+  "TRANSGENDER GANDHI",
   "MEGNA",
   "TJ13",
   "CHOCOLATE JESUS",
@@ -85,7 +85,7 @@ function buttonPush() {
     alert("Herobrine");
   } else if (val === "EASTER EGG") {
     window.location.href =
-      "https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=1";
+      "https://www.youtube.com/watch?v=QDia3e12czcautoplay=1";
   } else {
     alert("Player Already guessed or is not a player.")
 
