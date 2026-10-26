@@ -21,6 +21,7 @@ const players = [
   "SICKLE",
   "VAMPIRE",
   "TRANSGENDER GANDHI",
+  "APSARA",
   "MEGNA",
   "TJ13",
   "CHOCOLATE JESUS",
@@ -84,7 +85,7 @@ function buttonPush() {
   } else if (val === "HEROBRINE") {
     alert("Herobrine");
   } else if (val === "EASTER EGG") {
-    window.location.href =
+     window.location.href =
       "https://www.youtube.com/watch?v=QDia3e12czcautoplay=1";
   } else {
     alert("Player Already guessed or is not a player.")
